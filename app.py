@@ -5,9 +5,9 @@ import seaborn as sns
 
 
 # Load data from files
-ratings = pd.read_csv(r'd:/for practice/ml-1m/ratings.dat', delimiter='::', engine='python', names=['UserID', 'MovieID', 'Rating', 'Timestamp'], encoding='latin-1')
-users = pd.read_csv(r'd:/for practice/ml-1m/users.dat', delimiter='::', engine='python', names=['UserID', 'Gender', 'Age', 'Occupation', 'Zip-code'], encoding='latin-1')
-movies = pd.read_csv(r'd:/for practice/ml-1m/movies.dat', delimiter='::', engine='python', names=['MovieID', 'Title', 'Genres'], encoding='latin-1')
+ratings = pd.read_csv(r'ml-1m/ratings.dat', delimiter='::', engine='python', names=['UserID', 'MovieID', 'Rating', 'Timestamp'], encoding='latin-1')
+users = pd.read_csv(r'ml-1m/users.dat', delimiter='::', engine='python', names=['UserID', 'Gender', 'Age', 'Occupation', 'Zip-code'], encoding='latin-1')
+movies = pd.read_csv(r'ml-1m/movies.dat', delimiter='::', engine='python', names=['MovieID', 'Title', 'Genres'], encoding='latin-1')
 
 # Handle missing values
 ratings.dropna(inplace=True)
